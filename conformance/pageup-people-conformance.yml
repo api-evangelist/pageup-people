@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.pageuppeople.com/how-we-do-it/security/
+standards:
+- id: oauth2
+  conforms: true
+  evidence: API secured with OAuth 2.0 client-credentials (developer portal getting-started).
+- id: iso-27001-2022
+  conforms: true
+  evidence: Certified to ISO/IEC 27001:2022 (security page, certificate published).
+- id: texas-ramp
+  conforms: true
+  evidence: Texas RAMP recognition displayed on security page.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors use a custom JSON array envelope, not application/problem+json.
+- id: iso-31000-risk
+  conforms: true
+  evidence: Risk management framework based on ISO 31000.
+compliance_program:
+  published: true
+  url: https://www.pageuppeople.com/how-we-do-it/security/
+  certifications:
+  - ISO/IEC 27001:2022
+  - Texas RAMP

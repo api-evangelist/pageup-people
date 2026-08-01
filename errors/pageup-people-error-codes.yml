@@ -1,0 +1,46 @@
+generated: '2026-07-20'
+method: searched
+source: https://developers.pageuppeople.com/Content/error-handling
+format: custom-json-array
+envelope:
+  description: >-
+    Errors are returned as a JSON array of error objects. Each object carries a
+    required "message" describing the error; validation errors additionally
+    include a "field" naming the offending property. This is NOT RFC 9457
+    application/problem+json.
+  fields:
+  - name: message
+    required: true
+    description: Human-readable description of the error.
+  - name: field
+    required: false
+    description: The specific request field that failed validation.
+  example: |
+    [
+      {"message": "error description"},
+      {"field": "fieldName", "message": "field-specific error"}
+    ]
+status_codes:
+- status: 200
+  meaning: Successful request.
+- status: 201
+  meaning: Resource successfully created.
+- status: 202
+  meaning: Asynchronous resource creation initiated.
+- status: 400
+  meaning: Invalid request data.
+- status: 401
+  meaning: Missing or expired API credentials.
+- status: 403
+  meaning: Insufficient permissions for resource access.
+- status: 404
+  meaning: Resource does not exist.
+- status: 429
+  meaning: The daily rate limit has been exceeded.
+- status: 500
+  meaning: Server-side failure (50X).
+notes: >-
+  Derived-equivalent capture is not possible (no public OpenAPI); this catalog
+  is searched verbatim from the published error-handling documentation. Rate
+  limiting is enforced as a daily request limit surfaced via HTTP 429; specific
+  thresholds, reset headers, and backoff guidance are not published.

@@ -1,23 +1,131 @@
 aid: pageup-people
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pageup-people.png
 name: PageUp People
-description: PageUp People is a company surfaced as a portfolio company of battery-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  PageUp is an enterprise talent management and talent acquisition software
+  provider headquartered in Melbourne, Australia, serving large organizations
+  across government, healthcare, higher education, retail, and other sectors.
+  The PageUp platform spans recruitment marketing, applicant tracking (ATS),
+  onboarding, performance and development, learning, succession, and workforce
+  analytics. PageUp exposes a REST API suite for clients and integration
+  partners covering Core HR (employees, positions, business units, cost centres,
+  agreements, pay scales, roles, sites, teams), Recruitment (applicants,
+  applications, documents, hire), Partner endpoints (learning activities, SCORM
+  content, assessment, background checking, work compliance), Performance
+  (review reports), and Platform functions (data exports). The API is secured
+  with OAuth 2.0 client-credentials, is documented at developers.pageuppeople.com
+  with a Postman workspace and API release logs, and provisions a UAT sandbox
+  environment; per-tenant API domains are provisioned by PageUp for each client.
 url: https://raw.githubusercontent.com/api-evangelist/pageup-people/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - battery-ventures
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: has-developer-portal-and-api-suite
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Talent Management
+- Talent Acquisition
+- Human Resources
+- Recruiting
+- Applicant Tracking
+- Onboarding
+- Learning
+- HR Technology
+- SaaS
+apis:
+- name: PageUp Talent Management API
+  description: >-
+    REST API suite for the PageUp talent management platform, secured with
+    OAuth 2.0 client-credentials. Covers Core HR, Recruitment, Partner,
+    Performance, and Platform (Exports) endpoint groups. Per-tenant API domains
+    are provisioned by PageUp for each client; UAT and production credentials
+    are issued by a PageUp Technical Consultant.
+  humanURL: https://developers.pageuppeople.com/
+  baseURL: https://developers.pageuppeople.com/
+  properties:
+  - type: DeveloperPortal
+    url: https://developers.pageuppeople.com/
+  - type: Documentation
+    url: https://developers.pageuppeople.com/Content/getting-started
+  - type: APIReference
+    url: https://developers.pageuppeople.com/Api
+  - type: GettingStarted
+    url: https://developers.pageuppeople.com/Content/getting-started
+  - type: Authentication
+    url: authentication/pageup-people-authentication.yml
+  - type: ErrorCatalog
+    url: errors/pageup-people-error-codes.yml
+  - type: Conventions
+    url: conventions/pageup-people-conventions.yml
+  - type: Sandbox
+    url: sandbox/pageup-people-sandbox.yml
+common:
+- type: DeveloperPortal
+  url: https://developers.pageuppeople.com/
+- type: Documentation
+  url: https://developers.pageuppeople.com/Content/getting-started
+- type: APIReference
+  url: https://developers.pageuppeople.com/Api
+- type: GettingStarted
+  url: https://developers.pageuppeople.com/Content/getting-started
+- type: Blog
+  url: https://medium.com/pageup-tech
+- type: Website
+  url: https://www.pageuppeople.com/
+- type: PrivacyPolicy
+  url: https://www.pageuppeople.com/privacy-policy/
+- type: SignUp
+  url: https://www.pageuppeople.com/request-a-demo/
+- type: Pricing
+  url: https://www.pageuppeople.com/request-a-demo/
+- type: Marketplace
+  url: https://www.pageuppeople.com/marketplace/
+- type: Authentication
+  url: authentication/pageup-people-authentication.yml
+- type: ErrorCatalog
+  url: errors/pageup-people-error-codes.yml
+- type: Conventions
+  url: conventions/pageup-people-conventions.yml
+- type: Sandbox
+  url: sandbox/pageup-people-sandbox.yml
+- type: VulnerabilityDisclosure
+  url: security/pageup-people-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.pageuppeople.com/responsible-disclosure/
+- type: Conformance
+  url: conformance/pageup-people-conformance.yml
+- type: Compliance
+  url: https://www.pageuppeople.com/how-we-do-it/security/
+- type: TrustCenter
+  url: security/pageup-people-trust-center.yml
+- type: DomainSecurity
+  url: security/pageup-people-domain-security.yml
+- type: LLMsTxt
+  url: llms/pageup-people-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

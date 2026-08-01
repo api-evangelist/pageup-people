@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+probe: true
+url: https://www.pageuppeople.com/how-we-do-it/security/
+certifications:
+- ISO/IEC 27001:2022
+- Texas RAMP
+compliance_notes:
+- >-
+    Certified to ISO/IEC 27001:2022 across the entire Talent Management platform
+    plus development and support; independently audited twice annually.
+- >-
+    Hosted on AWS, leveraging AWS data-centre, personnel, and services
+    certifications (see aws.amazon.com/compliance).
+- >-
+    Texas RAMP recognition displayed for US public-sector customers.
+- >-
+    ISO 31000-based risk management framework (asset + tactical risk registers).
+subprocessor_transparency:
+- https://www.pageuppeople.com/wp-content/uploads/2025/01/PageUp_Subprocessor_List_PageUp_Customers_January_2025.pdf
+evidence:
+- source: https://www.pageuppeople.com/how-we-do-it/security/
+  keywords:
+  - iso 27001
+  - texas ramp
+  - security
+  - compliance

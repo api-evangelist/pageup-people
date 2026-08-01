@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: searched
+source: https://developers.pageuppeople.com/Content/getting-started
+docs: https://developers.pageuppeople.com/Content/error-handling
+authentication:
+  style: oauth2
+  flow: clientCredentials
+  detail: >-
+    OAuth 2.0 client-credentials; client id/secret issued by PageUp per tenant
+    (UAT first, then production). See authentication/pageup-people-authentication.yml
+base_url:
+  style: per-tenant
+  detail: >-
+    PageUp provisions a target domain for API requests per client tenant; there
+    is no single public base URL.
+error_envelope:
+  format: custom-json-array
+  detail: >-
+    Array of {message, field?} objects (not RFC 9457). See
+    errors/pageup-people-error-codes.yml
+rate_limiting:
+  documented: true
+  style: daily-limit
+  signal: HTTP 429 "The daily rate limit has been exceeded"
+  detail: >-
+    A daily request rate limit is enforced and surfaced via HTTP 429; specific
+    thresholds and rate-limit response headers are not published.
+idempotency:
+  documented: false
+  detail: No idempotency key/header is documented in the public developer portal.
+pagination:
+  documented: false
+  detail: Pagination conventions are not documented in the public getting-started material.
+versioning:
+  documented: partial
+  detail: >-
+    PageUp publishes API Release Logs for updates; a formal version scheme is not
+    published in the public getting-started material.
+cross_links:
+  authentication: authentication/pageup-people-authentication.yml
+  errors: errors/pageup-people-error-codes.yml
+  sandbox: sandbox/pageup-people-sandbox.yml
+notes: >-
+  No idempotency contract is documented, so no Idempotency pointer is emitted.

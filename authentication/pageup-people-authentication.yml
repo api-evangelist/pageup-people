@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://developers.pageuppeople.com/Content/getting-started
+docs: https://developers.pageuppeople.com/Content/getting-started
+summary:
+  types:
+  - oauth2
+  oauth2_flows:
+  - clientCredentials
+schemes:
+- name: OAuth2ClientCredentials
+  type: oauth2
+  flow: clientCredentials
+  description: >-
+    The PageUp API is secured with OAuth 2.0 client-credentials. Integration
+    partners obtain OAuth 2.0 client credentials (client id + secret) from PageUp
+    for the UAT (sandbox) environment first, then request production credentials
+    from their PageUp Technical Consultant to go live. Per-tenant API domains and
+    token endpoints are provisioned by PageUp for each client and are not
+    published as a single public host.
+  credentials_issued_by: PageUp (per-tenant, UAT then production)
+  sources:
+  - docs
+notes: >-
+  No public OpenAPI/Swagger document is available (the developer portal at
+  developers.pageuppeople.com is client/partner-facing), so this profile is
+  searched from the published getting-started documentation rather than derived
+  from a spec. OAuth scopes/permissions are not publicly documented; no scopes/
+  artifact is emitted.

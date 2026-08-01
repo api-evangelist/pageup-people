@@ -1,0 +1,36 @@
+# PageUp People
+
+> PageUp is an enterprise talent management and talent acquisition software provider (Melbourne, Australia) serving large organizations across government, healthcare, higher education, and retail. The platform spans recruitment marketing, applicant tracking (ATS), onboarding, performance, learning, succession, and analytics, and exposes an OAuth 2.0-secured REST API suite for clients and integration partners.
+
+## APIs
+
+- [PageUp Talent Management API](https://developers.pageuppeople.com/): OAuth 2.0 client-credentials REST API suite. Endpoint groups: Core HR (Employee, Position, Business Unit, Cost Centre, Agreement, Agreement Classification, Agreement Type, Pay Scale, Role, Site, Team, Generic List), Recruitment (Applicant, Applications, Document, Hire), Partner (Learning Activities, SCORM Content, Assessment, Background Checking, Work Compliance), Performance (Performance Review Reports), Platform (Exports). Per-tenant API domains are provisioned by PageUp.
+
+## Docs
+
+- [Developer Portal](https://developers.pageuppeople.com/)
+- [Getting Started](https://developers.pageuppeople.com/Content/getting-started)
+- [API Reference](https://developers.pageuppeople.com/Api)
+- [Error Handling](https://developers.pageuppeople.com/Content/error-handling)
+- [FAQ](https://developers.pageuppeople.com/Content/faq)
+- [Tech Blog](https://medium.com/pageup-tech)
+
+## Security
+
+- [Security & Compliance](https://www.pageuppeople.com/how-we-do-it/security/): ISO/IEC 27001:2022 certified, Texas RAMP, AWS-hosted.
+- [Responsible Disclosure](https://www.pageuppeople.com/responsible-disclosure/): security@pageuppeople.com (no bug bounty; Hall of Fame recognition).
+
+## Artifacts
+
+- [Authentication](authentication/pageup-people-authentication.yml): OAuth 2.0 client-credentials.
+- [Error Codes](errors/pageup-people-error-codes.yml): custom JSON array envelope; 400/401/403/404/429/50X.
+- [Conventions](conventions/pageup-people-conventions.yml): auth, error envelope, daily rate limiting.
+- [Sandbox](sandbox/pageup-people-sandbox.yml): UAT environment + Postman workspace.
+- [Conformance](conformance/pageup-people-conformance.yml): OAuth 2.0, ISO 27001:2022, Texas RAMP.
+
+## Company
+
+- [Website](https://www.pageuppeople.com/)
+- [Marketplace (150+ integrations)](https://www.pageuppeople.com/marketplace/)
+- [Privacy Policy](https://www.pageuppeople.com/privacy-policy/)
+- [Request a Demo](https://www.pageuppeople.com/request-a-demo/)

@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: https://developers.pageuppeople.com/Content/getting-started
+environments:
+- name: UAT
+  role: sandbox
+  detail: >-
+    A UAT (User Acceptance Testing) sandbox environment is provisioned for
+    integration development. Partners obtain OAuth 2.0 client credentials for
+    their UAT environment from PageUp before requesting production credentials.
+- name: Production
+  role: live
+  detail: >-
+    Production credentials are requested from a PageUp Technical Consultant to
+    go live.
+tooling:
+- name: Postman workspace
+  detail: >-
+    PageUp publishes a Postman workspace with example requests referenced from
+    the developer portal getting-started guide.
+test_values_published: false
+notes: >-
+  Test/sandbox environments are gated behind PageUp-issued per-tenant
+  credentials; no public magic test values, cards, or fixtures are published, so
+  none are captured (no fabrication).

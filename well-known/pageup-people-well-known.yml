@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+host: https://www.pageuppeople.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+  note: Request redirects (301) to the site homepage; no RFC 9116 security.txt served.
+- path: /.well-known/openid-configuration
+  status: 404
+  note: Redirects to homepage; no OIDC discovery document.
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  note: Redirects to homepage; no RFC 8414 metadata (OAuth endpoints are per-tenant).
+- path: /.well-known/api-catalog
+  status: 404
+  note: Redirects to homepage; no RFC 9727 API catalog.
+secondary_host: https://developers.pageuppeople.com
+secondary_documents:
+- path: /.well-known/security.txt
+  status: 404
+notes: >-
+  No .well-known discovery documents are published on the marketing or developer
+  host. Vulnerability-disclosure contact is published as a policy page
+  (security@pageuppeople.com) rather than a security.txt. Statuses recorded from
+  live probes on 2026-07-20.
