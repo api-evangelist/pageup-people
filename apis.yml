@@ -48,6 +48,17 @@ tags:
 - Onboarding
 - Learning
 - HR Technology
+- Software-as-a-Service
+tags_raw:
+- Company
+- Talent Management
+- Talent Acquisition
+- Human Resources
+- Recruiting
+- Applicant Tracking
+- Onboarding
+- Learning
+- HR Technology
 - SaaS
 apis:
 - name: PageUp Talent Management API
