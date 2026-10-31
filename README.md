@@ -64,6 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-PageUp People is a company surfaced as a portfolio company of battery-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+PageUp is an enterprise talent management and talent acquisition software provider headquartered in Melbourne, Australia, serving large organizations across government, healthcare, higher education, retail, and other sectors. The PageUp platform spans recruitment marketing, applicant tracking (ATS), onboarding, performance and development, learning, succession, and workforce analytics. PageUp exposes a REST API suite for clients and integration partners covering Core HR (employees, positions, business units, cost centres, agreements, pay scales, roles, sites, teams), Recruitment (applicants, applications, documents, hire), Partner endpoints (learning activities, SCORM content, assessment, background checking, work compliance), Performance (review reports), and Platform functions (data exports). The API is secured with OAuth 2.0 client-credentials, is documented at developers.pageuppeople.com with a Postman workspace and API release logs, and provisions a UAT sandbox environment; per-tenant API domains are provisioned by PageUp for each client.
 
-Backed by: battery-ventures
+**Areas:** Company · Talent Management · Talent Acquisition · Human Resources · Recruiting · Applicant Tracking · Onboarding · Learning · HR Technology · Software-as-a-Service
+
+## PageUp People on APIs.io
+
+Everything profiled for PageUp People is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pageup-people/](https://apis.io/providers/pageup-people/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [PageUp Talent Management API](https://apis.io/apis/pageup-people/pageup-talent-management-api/) — REST API suite for the PageUp talent management platform, secured with OAuth 2.0 client-credentials. Covers Core HR, Recruitment, Partner, Performance, and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Pageup People Authentication](https://apis.io/security/pageup-people/pageup-people-authentication/)
+- [Pageup People Domain Security](https://apis.io/security/pageup-people/pageup-people-domain-security/)
+- [Pageup People Trust Center](https://apis.io/security/pageup-people/pageup-people-trust-center/)
+- [Pageup People Vulnerability Disclosure](https://apis.io/security/pageup-people/pageup-people-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.pageuppeople.com/)
+- [Documentation](https://developers.pageuppeople.com/Content/getting-started)
+- [Getting started](https://developers.pageuppeople.com/Content/getting-started)
+- [API reference](https://developers.pageuppeople.com/Api)
+- [Pricing](https://www.pageuppeople.com/request-a-demo/)
+- [Sign up](https://www.pageuppeople.com/request-a-demo/)
+- [Blog](https://medium.com/pageup-tech)
+- [Security](https://www.pageuppeople.com/responsible-disclosure/)
+- [Compliance](https://www.pageuppeople.com/how-we-do-it/security/)
+- [Privacy policy](https://www.pageuppeople.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 23.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 59.5 |
+| Access clarity | 7.9 |
+
+**Agent readiness 5.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.5** — Employment & Payroll
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pageup-people/](https://apis.io/providers/pageup-people/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PageUp People: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pageup-people/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
